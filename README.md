@@ -8,7 +8,7 @@ show route where net ~ 79.110.192.0/20
 ```sh
 python3 free-pools.py nazwa_pliku
 ```
-3. Program zwróci nam następujący wynik:
+3. Program zwróci nam następujący wynik (przykład na innej adresacji):
 ```sh
 192.168.1.64/26
                   | Free: 192.168.1.128/?
