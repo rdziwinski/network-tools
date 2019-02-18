@@ -3,13 +3,9 @@ import os, sys
 
 def main():
 	filename = sys.argv[1]
-	#ipki = os.popen("cat ip | grep 79.110 | awk '{print $1}' | sort -t . -k 2,2n -k 3,3n -k 4,4n").read()
-
-	command = "cat "+filename+" | grep 79.110 | awk '{print $1}' | sort -t . -k 2,2n -k 3,3n -k 4,4n"
+	command = "cat "+filename+" | grep '79\|193' | awk '{print $1}' | sort -t . -k 2,2n -k 3,3n -k 4,4n"
 	ipki = os.popen(command).read()
-	print(command)
 	ipki = list(filter(None, str(ipki).split("\n")))
-
 
 	i = 1
 	j = 0
@@ -25,6 +21,7 @@ def main():
 			free = "                  | Free: " + next_pool + "/?"
 			print(free)
 			print(next_net)
+			print(".\n.\n.")
 			j+=1
 		i+=1
 
@@ -32,3 +29,5 @@ def main():
 	print(free_summary)
 
 main()
+
+
