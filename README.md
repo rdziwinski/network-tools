@@ -15,5 +15,3 @@ python3 free-pools.py nazwa_pliku
 192.168.1.192/26
 ```
 Po lewej stronie mamy pule które są zajęte i "otaczają" wolną pulę która jest po prawej stronie. Maskę musimy dobrać sami ponieważ program ten szuka nieciągłości w pulach które są założone.
-
-Na razie działa tylko na adresach zaczynających się na 79.110 co widać w kodzie programu można to zmienić edytując plik *.py. Łatwiejszą edycję dodam w przyszłości.
