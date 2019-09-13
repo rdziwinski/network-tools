@@ -3,6 +3,7 @@ Instrukcja obsługi:
 1. Wchodzimy na birda, wykonujemy poniższą komendą i jej wynik wklejamy do pliku znajdującego się w tym samym katalogu co plik free-pools.py
 ```sh
 show route where net ~ 79.110.192.0/20
+show route where net ~ 193.239.56.0/22
 ```
 2. Uruchamiamy program.
 ```sh
